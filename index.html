@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0a0b1e">
+<meta name="description" content="Emon Mega Universe — গেম, কুইজ, চ্যালেঞ্জ ও বন্ধুদের সঙ্গে মজার দুনিয়া।">
+<title>Emon Mega Universe 🚀</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-icon">E</span><span><b>EMON</b><small>MEGA UNIVERSE</small></span></a>
+  <button id="menuBtn" class="menu-btn" aria-label="মেনু">☰</button>
+  <nav id="nav"><a href="#games">গেমস</a><a href="#challenge">চ্যালেঞ্জ</a><a href="#quiz">কুইজ</a><a href="#party">বন্ধুদের সঙ্গে</a><a href="#profile">প্রোফাইল</a></nav>
+</header>
+
+<div class="voice-welcome" id="voiceWelcome">
+  <audio id="welcomeVoice" src="welcome-voice.mp3" preload="auto" autoplay></audio>
+  <button type="button" id="voiceToggle" aria-label="ওয়েলকাম ভয়েস চালু করুন">🔊 ওয়েলকাম ভয়েস চালু করুন</button>
+  <span id="voiceHint">সাইট খুললে ভয়েস চালু হওয়ার চেষ্টা করবে। ব্রাউজার আটকে দিলে বাটনে চাপ দাও।</span>
+</div>
+
+<main>
+<section class="hero">
+  <div class="hero-copy"><span class="eyebrow">✨ YOUR WORLD. YOUR RULES.</span>
+    <h1>স্বাগতম তোমার<br><span>MEGA UNIVERSE-এ!</span></h1>
+    <p>মিনি গেম খেলো, কুইজ জেতো, বন্ধুদের চ্যালেঞ্জ দাও, নিজের নামের পোস্টার বানাও—সব এক জায়গায়।</p>
+    <div class="actions"><a class="btn primary" href="#games">🚀 খেলতে শুরু করো</a><button class="btn glass" id="dailyBtn">🎁 আজকের চমক</button></div>
+    <div class="hero-badges"><span>🎮 মিনি গেম</span><span>🧠 ব্রেইন চ্যালেঞ্জ</span><span>🏆 স্কোর ও ব্যাজ</span></div>
+  </div>
+  <div class="hero-visual"><div class="planet planet-one"></div><div class="planet planet-two"></div><div class="star s1">✦</div><div class="star s2">✧</div><div class="space-card"><span>🚀</span><b>LEVEL UP!</b><small>READY PLAYER?</small></div><div class="orbit"></div></div>
+</section>
+<section class="welcome-strip"><div><span class="online-dot"></span><b id="welcomeName">হ্যালো, প্লেয়ার!</b><small>তোমার পরের অ্যাডভেঞ্চার অপেক্ষায়</small></div><div class="coin-display">🪙 <b id="coins">0</b> কয়েন</div></section>
+<section class="section" id="games"><div class="section-head"><div><span class="eyebrow">PICK YOUR GAME</span><h2>🎮 গেমিং এরিনা</h2><p>এখনই ব্রাউজারে খেলো—ইনস্টল লাগবে না।</p></div><span class="section-count">০১ / GAMES</span></div>
+<div class="game-grid">
+<article class="game-card purple"><div class="game-icon">⚡</div><span class="mini-label">REACTION</span><h3>রিঅ্যাকশন রাশ</h3><p>সবুজ হলেই চাপ দাও। কত দ্রুত তুমি?</p><button class="btn small launch" data-game="reaction">খেলো ↗</button></article>
+<article class="game-card cyan"><div class="game-icon">🧠</div><span class="mini-label">MEMORY</span><h3>মেমোরি ম্যাচ</h3><p>একই রঙের জোড়া খুঁজে বের করো।</p><button class="btn small launch" data-game="memory">খেলো ↗</button></article>
+<article class="game-card orange"><div class="game-icon">🎲</div><span class="mini-label">LUCK</span><h3>লাকি ডাইস</h3><p>ডাইস ঘুরিয়ে ভাগ্য পরীক্ষা করো।</p><button class="btn small launch" data-game="dice">খেলো ↗</button></article>
+<article class="game-card pink"><div class="game-icon">✊</div><span class="mini-label">DUEL</span><h3>পাথর-কাগজ-কাঁচি</h3><p>কম্পিউটারকে হারাতে পারো?</p><button class="btn small launch" data-game="rps">খেলো ↗</button></article>
+<article class="game-card blue"><div class="game-icon">🔢</div><span class="mini-label">GUESS</span><h3>নাম্বার হান্ট</h3><p>১ থেকে ২০-এর মধ্যে গোপন সংখ্যা খুঁজো।</p><button class="btn small launch" data-game="guess">খেলো ↗</button></article>
+<article class="game-card green"><div class="game-icon">🌀</div><span class="mini-label">RANDOM</span><h3>চ্যালেঞ্জ হুইল</h3><p>স্পিন করো, মজার টাস্ক নাও।</p><button class="btn small launch" data-game="wheel">খেলো ↗</button></article>
+</div>
+</section>
+<section class="section challenge-section" id="challenge"><div class="section-head"><div><span class="eyebrow">DAILY QUEST</span><h2>🔥 আজকের চ্যালেঞ্জ</h2><p>ছোট কাজ, বড় মজা—চ্যালেঞ্জ শেষ করে কয়েন জেতো।</p></div></div><div class="quest-grid"><div class="quest-card"><span class="quest-emoji">🎯</span><div><b>তিনটি গেম চেষ্টা করো</b><p>যেকোনো তিনটি মিনি গেম চালু করো।</p></div><span class="reward">+২০ 🪙</span></div><div class="quest-card"><span class="quest-emoji">🧠</span><div><b>কুইজে উত্তর দাও</b><p>কমপক্ষে একটি প্রশ্নের উত্তর দাও।</p></div><span class="reward">+১০ 🪙</span></div><div class="quest-card"><span class="quest-emoji">🎨</span><div><b>নিজের পোস্টার বানাও</b><p>নাম দিয়ে একটি পোস্টার তৈরি করো।</p></div><span class="reward">+১০ 🪙</span></div></div><p class="note">কয়েন এই ব্রাউজারের মধ্যেই সংরক্ষিত থাকে; এগুলো বাস্তব টাকা নয়।</p></section>
+<section class="section" id="quiz"><div class="section-head"><div><span class="eyebrow">BRAIN POWER</span><h2>🧠 কুইজ চ্যালেঞ্জ</h2><p>সঠিক উত্তর দিলে পয়েন্ট জিতবে।</p></div><span class="score-pill" id="quizScore">স্কোর: ০</span></div><div class="quiz-panel"><div class="quiz-top"><span id="quizProgress">প্রশ্ন ১</span><span>এক্সপার্ট মোড? পরে আসছে 😎</span></div><h3 id="question">বাংলাদেশের জাতীয় ফুল কোনটি?</h3><div id="answers" class="answer-grid"></div><p id="feedback" aria-live="polite">সঠিক উত্তর বেছে নাও!</p><button id="nextQuestion" class="btn primary">পরের প্রশ্ন →</button></div></section>
+<section class="section party-section" id="party"><div class="section-head"><div><span class="eyebrow">PLAY TOGETHER</span><h2>🎉 বন্ধুদের পার্টি জোন</h2><p>একই ফোনে পালা করে খেলো, অথবা চ্যালেঞ্জ লিংক শেয়ার করো।</p></div></div><div class="party-grid"><div class="party-card"><div class="game-icon">💬</div><h3>Truth or Dare</h3><p>বন্ধুদের সঙ্গে মজার প্রশ্ন আর নিরাপদ চ্যালেঞ্জ।</p><button class="btn small" id="truthDare">চ্যালেঞ্জ নাও</button><div id="truthResult" class="result-box">বোতাম চাপলেই নতুন চ্যালেঞ্জ।</div></div><div class="party-card"><div class="game-icon">🎡</div><h3>কে আগে করবে?</h3><p>বন্ধুদের নাম লিখে র‍্যান্ডম একজন বেছে নাও।</p><input id="friendNames" placeholder="নাম লিখো, কমা দিয়ে আলাদা করো"><button class="btn small" id="pickFriend">একজন বেছে নাও</button><div id="friendResult" class="result-box">যেমন: ইমন, রাফি, সুমাইয়া</div></div><div class="party-card"><div class="game-icon">📣</div><h3>চ্যালেঞ্জ শেয়ার</h3><p>সাইটের লিংক বন্ধুদের পাঠাও এবং একসঙ্গে খেলো।</p><button class="btn small" id="shareSite">শেয়ার করো ↗</button><div id="shareStatus" class="result-box">শেয়ারিং ডিভাইস অনুযায়ী কাজ করবে।</div></div></div></section>
+<section class="section profile-section" id="profile"><div class="section-head"><div><span class="eyebrow">YOUR PLAYER CARD</span><h2>🪪 তোমার প্রোফাইল</h2><p>নাম ও অ্যাভাটার বেছে নিজের প্লেয়ার কার্ড বানাও।</p></div></div><div class="profile-layout"><div class="profile-form"><label for="playerName">তোমার নাম</label><input id="playerName" maxlength="22" placeholder="যেমন: Emon"><label for="avatar">অ্যাভাটার</label><select id="avatar"><option>😎</option><option>🚀</option><option>🐼</option><option>🦊</option><option>👑</option><option>🐸</option><option>🐯</option></select><button id="saveProfile" class="btn primary">প্রোফাইল সেভ</button><button id="resetProgress" class="btn glass">প্রোগ্রেস রিসেট</button></div><div class="player-card"><div id="playerAvatar" class="avatar">😎</div><span class="mini-label">MEGA PLAYER</span><h3 id="playerCardName">PLAYER</h3><p>লেভেল <b id="level">১</b> · <span id="playerCoins">০</span> কয়েন</p><div class="progress"><span id="progressBar"></span></div><small>খেলতে থাকো, লেভেল বাড়াও!</small></div></div></section>
+<section class="section poster-section" id="poster"><div class="section-head"><div><span class="eyebrow">CREATE & SHARE</span><h2>🎨 নামের পোস্টার মেকার</h2><p>নাম আর ক্যাপশন দিয়ে পোস্টার তৈরি করে PNG হিসেবে সেভ করো।</p></div></div><div class="poster-layout"><div class="poster-form"><label for="posterName">নাম</label><input id="posterName" maxlength="24" placeholder="Emon"><label for="posterCaption">ক্যাপশন</label><input id="posterCaption" maxlength="50" placeholder="Dream Big ✨"><button id="makePoster" class="btn primary">পোস্টার তৈরি</button><button id="downloadPoster" class="btn glass">PNG ডাউনলোড</button></div><canvas id="posterCanvas" width="900" height="600"></canvas></div></section>
+<section class="section fun-section"><div class="fun-banner"><div><span class="eyebrow">NEED A SURPRISE?</span><h2>🎁 তোমার জন্য র‍্যান্ডম মজা</h2><p id="surpriseText">বোতাম চাপো, কী পাও তা দেখো!</p></div><button class="btn primary" id="surpriseAgain">চমক দেখাও ✨</button></div></section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-icon">E</span><span><b>EMON</b><small>MEGA UNIVERSE</small></span></a><p>© <span id="year"></span> Emon Mega Universe</p><small>একটি ফ্যান-মেড বিনোদনমূলক সাইট। কয়েন ও স্কোর শুধুই গেমের জন্য।</small></footer>
+<div class="modal-backdrop" id="gameModal" aria-hidden="true"><div class="modal"><button class="modal-close" id="closeModal" aria-label="বন্ধ করুন">×</button><span class="eyebrow">MINI GAME</span><h2 id="modalTitle">গেম</h2><div id="modalBody"></div></div></div>
+<script src="script.js"></script>
+</body></html>
